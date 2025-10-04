@@ -1,0 +1,178 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/fondo.jpg"); /* <- aquí va extensión */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+header {
+  background-color: rgba(136, 192, 87, 0.8);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(234, 243, 226, 0.9);
+  padding: 15px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2d3a32;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(136, 192, 87, 0.7);
+  color: white;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+.section {
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent; /* Fondo transparente */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+footer {
+  background-color: rgba(136, 192, 87, 0.8);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  margin-top: 40px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* separa logo e items */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 30px;
+}
+
+/* Contenedor izquierdo (logo) */
+.nav-left {
+    flex: 1; /* ocupa el espacio de la izquierda */
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Contenedor derecho (enlaces) */
+.nav-right {
+    display: flex;
+    gap: 20px; /* espacio entre enlaces */
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: #008000; /* verde al pasar el mouse */
+}
+
+
+}

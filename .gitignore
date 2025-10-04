@@ -1,28 +1,14 @@
-# Angular specific
+# Carpetas generadas automáticamente
+/build/
 /dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
-.angular/
+/nbproject/private/
+/nbproject/genfiles.properties
 
-# Node modules and dependency files
-/node_modules/
-/package-lock.json
-/yarn.lock
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-# Environment files
-/.env
-
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Archivos binarios
+*.class
+*.jar
+*.war

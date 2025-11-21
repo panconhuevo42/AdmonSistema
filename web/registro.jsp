@@ -3,33 +3,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión</title>
+    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Inicio de Sesión</h2>
+    <div class="register-container">
+        <h2>Registrar nuevo usuario</h2>
         
         <% if (request.getParameter("error") != null) { %>
             <div class="error-message">
-                <% if (request.getParameter("error").equals("1")) { %>
-                    Email o contraseña incorrectos
-                <% } else if (request.getParameter("error").equals("2")) { %>
-                    Error del servidor. Intente más tarde.
-                <% } %>
+                Error en el registro. Intente con otro email.
             </div>
         <% } %>
         
-        <form action="login" method="post">
+        <form action="registro" method="post">
+            <label>Nombre:</label><br>
+            <input type="text" name="nombre" required><br><br>
+
             <label>Email:</label><br>
             <input type="email" name="email" required><br><br>
 
             <label>Contraseña:</label><br>
             <input type="password" name="contrasena" required><br><br>
 
-            <input type="submit" value="Ingresar">
+            <button type="submit">Registrar</button>
         </form>
-        <p>¿No tienes cuenta? <a href="registro.jsp">Regístrate aquí</a></p>
+        <p>¿Ya tienes cuenta? <a href="login.jsp">Inicia sesión aquí</a></p>
     </div>
 </body>
 </html>
